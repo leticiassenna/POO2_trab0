@@ -30,3 +30,13 @@ class TelaGerirProfessor (Professor):
         print("Professor salvo!")
 
         return professor
+
+
+    def buscarProfessor(self):
+        professorNome = input('Nome do professor: ')
+        return professorNome
+
+
+    def excluirProfessor(self):
+        professorNome = input('Nome do professor: ')
+        return professorNome

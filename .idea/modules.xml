@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/PycharmProjects/POO2_trab/.idea/POO2_trab.iml" filepath="$USER_HOME$/PycharmProjects/POO2_trab/.idea/POO2_trab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../capoeiraPOO2/.idea/capoeiraPOO2.iml" filepath="$PROJECT_DIR$/../capoeiraPOO2/.idea/capoeiraPOO2.iml" />
     </modules>
   </component>
 </project>

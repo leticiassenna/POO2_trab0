@@ -1,9 +1,9 @@
 __author__ = 'Leticia'
 
 from capoeira.model.cdp.Endereco import Endereco
-from capoeira.model.cgd.DAOEndereco import DAOEndereco
+#from capoeira.model.cgd.DAOEndereco import DAOEndereco
 
-class AplGerenciarEndereco(DAOEndereco):
+class AplGerenciarEndereco():
 
     def cadastrar(Endereco):
         endereco = Endereco
@@ -13,7 +13,6 @@ class AplGerenciarEndereco(DAOEndereco):
         endereco.cidade = Endereco.cidade
         endereco.complemento = Endereco.complemento
 
-        daoEndereco = DAOEndereco
-        daoEndereco.salvarEndereco(endereco)
+
 
 

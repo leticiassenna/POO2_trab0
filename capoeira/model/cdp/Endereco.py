@@ -2,7 +2,7 @@ __author__ = 'Leticia'
 
 class Endereco:
     def __int__(self):
-        #self.id = id
+        self.id = ""
         self.logradouro = ""
         self.numero = ""
         self.bairro = ""

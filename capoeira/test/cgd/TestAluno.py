@@ -1,4 +1,5 @@
 from capoeira.model.cdp.Endereco import Endereco
+from capoeira.model.cgd.DAOGeneric import DAOGeneric
 
 __author__ = 'Leticia'
 
@@ -9,6 +10,7 @@ from capoeira.model.cgt.AplGerenciarAluno import AplGerenciarAluno
 
 class TestAuno(unittest.TestCase):
     def testAluno(self):
+        DAOGeneric()
         a = Aluno
         a.nome = 'Leticia'
         a.rg = '123.123.123'

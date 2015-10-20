@@ -10,11 +10,25 @@ class CtrlTelaAluno(AplGerenciarAluno, TelaGerirAluno):
         aplGerenciarAluno = AplGerenciarAluno
         telaGerirAluno = TelaGerirAluno
 
-        #dadosAluno = []
         dadosAluno = telaGerirAluno.cadastrarAluno(self)
-        aplGerenciarAluno.cadastrar(dadosAluno)
+        aplGerenciarAluno.cadastrar(self, dadosAluno)
 
         relatorio = Relatorio
         relatorio.gerar_relatorio(aplGerenciarAluno)
 
         telaGerirAluno.mensagem(self, 'Cadastro realizado!')
+
+
+    def alterarAluno(self):
+        aplGerenciarAluno = AplGerenciarAluno
+        telaGerirAluno = TelaGerirAluno
+
+        dadosAluno = telaGerirAluno.buscarAluno(self)
+        aplGerenciarAluno.buscarAluno(dadosAluno)
+
+    def excluirAluno(self):
+        aplGerenciarAluno = AplGerenciarAluno
+        telaGerirAluno = TelaGerirAluno
+
+        dadosAluno = telaGerirAluno.excluirAluno(self)
+        aplGerenciarAluno.excluirAluno(dadosAluno)

@@ -28,3 +28,12 @@ class TelaGerirExame (CtrlTelaEndereco, Exame):
 
         return exame
 
+
+    def buscarExame(self):
+        dados = input('Dia do exame: ')
+        return dados
+
+
+    def excluirExame(self):
+        dados = input('Dia do exame: ')
+        return dados

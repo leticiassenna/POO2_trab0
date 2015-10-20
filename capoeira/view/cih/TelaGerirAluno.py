@@ -25,12 +25,19 @@ class TelaGerirAluno(CtrlTelaEndereco):
         aluno.mae = input('Nome da mae: ')
         aluno.cor_corda = Corda
         aluno.cor_corda.cor = input('Cor da corda: ')
+        aluno.grupo = input('Nome Grupo: ')
 
-        #aluno = []
-       # aluno.append((nome, rg, data_nascimento, endereco, telefone, profissao,grau_escolaridade, pai, mae))
 
         print("Aluno salvo!")
 
         return aluno
 
 
+    def buscarAluno(self):
+        alunoNome = input('Nome do aluno: ')
+        return alunoNome
+
+
+    def excluirAluno(self):
+        alunoNome = input('Nome do aluno: ')
+        return alunoNome

@@ -15,3 +15,18 @@ class CtrlTelaGrupo(AplGerenciarGrupo, TelaGerirGrupo):
         aplGerenciarGrupo.cadastrar(dadosGrupo)
 
         telaGerirGrupo.mensagem(self, 'Cadastro realizado!')
+
+
+    def alterarGrupo(self):
+        aplGerenciarGrupo = AplGerenciarGrupo
+        telaGerirGrupo = TelaGerirGrupo
+
+        dadosGrupo = telaGerirGrupo.buscarGrupo(self)
+        aplGerenciarGrupo.buscarGrupo(dadosGrupo)
+
+    def excluirGrupo(self):
+        aplGerenciarGrupo = AplGerenciarGrupo
+        telaGerirGrupo = TelaGerirGrupo
+
+        dadosGrupo = telaGerirGrupo.excluirGrupo(self)
+        aplGerenciarGrupo.excluirGrupo(dadosGrupo)

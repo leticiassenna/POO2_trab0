@@ -16,3 +16,18 @@ class CtrlTelaTurma(AplGerenciarTurma, TelaGerirTurma):
 
         telaGerirTurma.mensagem(self,'Cadastro realizado!')
 
+
+
+    def alterarTurma(self):
+        aplGerenciarTurma = AplGerenciarTurma
+        telaGerirTurma = TelaGerirTurma
+
+        dadosTurma = telaGerirTurma.buscarTurma(self)
+        aplGerenciarTurma.buscarTurma(dadosTurma)
+
+    def excluirTurma(self):
+        aplGerenciarTurma = AplGerenciarTurma
+        telaGerirTurma = TelaGerirTurma
+
+        dadosTurma = telaGerirTurma.excluirTurma(self)
+        aplGerenciarTurma.excluirTurma(dadosTurma)

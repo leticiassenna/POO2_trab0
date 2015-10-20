@@ -14,9 +14,15 @@ class AplGerenciarExame(DAOExame):
         exame.endereco = Endereco
         exame.endereco = Exame.endereco
         exame.mestre_examinador = Exame.mestre_examinador
-        #exame.turma = Turma
         exame.turma = Exame.turma
 
 
         daoExame = DAOExame
         daoExame.salvarExame(exame)
+
+
+    def buscarExame(nome):
+        print(nome)
+
+    def excluirExame(dadoExame):
+        print(dadoExame)

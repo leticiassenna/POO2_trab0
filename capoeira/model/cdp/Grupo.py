@@ -3,9 +3,9 @@ __author__ = 'Leticia'
 from capoeira.model.cdp.Corda import Corda
 from capoeira.model.cdp.Endereco import Endereco
 
-class Grupo(Corda, Endereco):
+class Grupo():
     def grupo(self):
-        self.sequencia_corda = []
-        self.sequencia_corda.append(Corda.sequencia_corda(self.cor_corda))
+        self.id =""
+        self.sequencia_corda = ""
         self.nome = ""
-        self.endereco = Endereco
+        self.endereco = Endereco()

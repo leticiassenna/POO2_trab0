@@ -6,6 +6,7 @@ from capoeira.model.cdp.Aluno import Aluno
 
 class Relatorio(Turma, Aluno):
     def gerar_relatorio(Aluno):
+
         arquivo = open("relatorio.txt", "r")
         novoArquivo = arquivo.readlines()
         novoArquivo.append('\n\n')
@@ -26,6 +27,6 @@ class Relatorio(Turma, Aluno):
         arquivo.write('\nNome do pai: ' + Aluno.pai)
         arquivo.write('\nNome da mae: ' + Aluno.mae)
         arquivo.write('\nCor da corda: ' + Aluno.cor_corda.cor)
-        # for linha in arquivo.readlines():
-        #    print(linha)
+        arquivo.write('\nGrupo: ' + Aluno.grupo)
+
         arquivo.close()

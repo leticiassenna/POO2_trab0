@@ -17,3 +17,10 @@ class AplGerenciarGrupo(DAOGrupo):
 
         daoGrupo = DAOGrupo
         daoGrupo.salvarGrupo(grupo)
+
+
+    def buscarGrupo(nome):
+        print(nome)
+
+    def excluirAlunoGrupo(dadoGrupo):
+        print(dadoGrupo)
