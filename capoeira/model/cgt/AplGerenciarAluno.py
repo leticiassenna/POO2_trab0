@@ -24,7 +24,11 @@ class AplGerenciarAluno(DAOAluno):
         aluno.cor_corda = Aluno.cor_corda
         aluno.grupo = Aluno.grupo
 
+<<<<<<< HEAD
         daoAluno = Sqlite_DAO_Factory.getDao(self, "Aluno")
+=======
+        daoAluno = DAOAluno
+>>>>>>> origin/master
         daoAluno.salvar(self, aluno)
 
 

@@ -1,6 +1,10 @@
 __author__ = 'Gustavo'
 
+<<<<<<< HEAD
 class DAO:
+=======
+def DAO():
+>>>>>>> origin/master
 
     def gravar_banco(self):
         raise Exception("Preciso ser implementado")
