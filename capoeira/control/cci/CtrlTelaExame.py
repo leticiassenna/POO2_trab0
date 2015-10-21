@@ -16,3 +16,18 @@ class CtrlTelaExame(AplGerenciarExame, TelaGerirExame):
 
         telaGerirExame.mensagem(self, 'Cadastro realizado!')
 
+
+
+    def alterarExame(self):
+        aplGerenciarExame = AplGerenciarExame
+        telaGerirExame = TelaGerirExame
+
+        dadosExame = telaGerirExame.buscarExame(self)
+        aplGerenciarExame.buscarExame(dadosExame)
+
+    def excluirExame(self):
+        aplGerenciarExame = AplGerenciarExame
+        telaGerirExame = TelaGerirExame
+
+        dadosExame = telaGerirExame.excluirExame(self)
+        aplGerenciarExame.excluirExame(dadosExame)

@@ -1,3 +1,5 @@
+from capoeira.model.cdp.Grupo import Grupo
+
 __author__ = 'Leticia'
 
 from capoeira.model.cdp.Endereco import Endereco
@@ -14,3 +16,5 @@ class Pessoa:
         self.profissao = ""
         self.grau_escolar = ""
         self.cor_corda = Corda
+        self.grupo = ""
+        self.endereco = Endereco()

@@ -3,6 +3,7 @@ __author__ = 'Leticia'
 from capoeira.model.cdp.Grupo import Grupo
 from capoeira.model.cgd.DAOGrupo import DAOGrupo
 from capoeira.model.cdp.Endereco import Endereco
+from capoeira.model.cgd.Sqlite_DAO_factory import Sqlite_DAO_Factory
 
 class AplGerenciarGrupo(DAOGrupo):
 
@@ -15,5 +16,12 @@ class AplGerenciarGrupo(DAOGrupo):
         grupo.sequencia_corda = Grupo.sequencia_corda
 
 
-        daoGrupo = DAOGrupo
+        daoGrupo = Sqlite_DAO_Factory.getDao(self, "Grupo")
         daoGrupo.salvarGrupo(grupo)
+
+
+    def buscarGrupo(nome):
+        print(nome)
+
+    def excluirAlunoGrupo(dadoGrupo):
+        print(dadoGrupo)

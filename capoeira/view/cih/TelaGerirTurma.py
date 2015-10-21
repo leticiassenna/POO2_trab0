@@ -38,3 +38,11 @@ class TelaGerirTurma (Turma):
 
 
 
+    def buscarTurma(self):
+        turmaNome = input('Nome da turma: ')
+        return turmaNome
+
+
+    def excluirTurma(self):
+        turmaNome = input('Nome da turma: ')
+        return turmaNome

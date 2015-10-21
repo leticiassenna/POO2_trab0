@@ -26,3 +26,11 @@ class TelaGerirGrupo (CtrlTelaEndereco, Grupo):
 
 
 
+    def buscarGrupo(self):
+        grupoNome = input('Nome do grupo: ')
+        return grupoNome
+
+
+    def excluirGrupo(self):
+        grupoNome = input('Nome do grupo: ')
+        return grupoNome

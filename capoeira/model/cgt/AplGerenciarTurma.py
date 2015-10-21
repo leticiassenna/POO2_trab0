@@ -16,3 +16,10 @@ class AplGerenciarTurma(DAOTuma):
 
         daoTurma = DAOTuma
         daoTurma.salvarTurma(turma)
+
+
+    def buscarTurma(nome):
+        print(nome)
+
+    def excluirTurma(dadoTurma):
+        print(dadoTurma)

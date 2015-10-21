@@ -15,3 +15,18 @@ class CtrlTelaProfessor(AplGerenciarProfessor, TelaGerirProfessor):
         aplGerenciarProfessor.cadastrar(dadosProfessor)
 
         telaGerirProfessor.mensagem(self, 'Cadastro realizado!')
+
+
+    def alterarProfessor(self):
+        aplGerenciarProfessor = AplGerenciarProfessor
+        telaGerirProfessor = TelaGerirProfessor
+
+        dadosProfessor = telaGerirProfessor.buscarProfessor(self)
+        aplGerenciarProfessor.buscarProfessor(dadosProfessor)
+
+    def excluirProfessor(self):
+        aplGerenciarProfessor = AplGerenciarProfessor
+        telaGerirProfessor = TelaGerirProfessor
+
+        dadosAluno = telaGerirProfessor.excluirProfessor(self)
+        aplGerenciarProfessor.excluirProfessor(dadosAluno)

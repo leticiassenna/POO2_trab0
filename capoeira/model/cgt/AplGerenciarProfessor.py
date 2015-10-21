@@ -21,3 +21,11 @@ class AplGerenciarProfessor(DAOProfessor, Corda):
 
         daoProfessor = DAOProfessor
         daoProfessor.salvarProfessor(professor)
+
+
+
+    def buscarProfessor(nome):
+        print(nome)
+
+    def excluirProfessor(dadoProfessor):
+        print(dadoProfessor)

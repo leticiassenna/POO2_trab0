@@ -1,15 +1,15 @@
 __author__ = 'Leticia'
 
-from capoeira.model.cdp.Aluno import Aluno
+
 from capoeira.model.cgd.DAOAluno import DAOAluno
 from capoeira.model.cdp.Endereco import Endereco
-
+from capoeira.model.cgd.Sqlite_DAO_factory import Sqlite_DAO_Factory
 from capoeira.model.cdp.Corda import Corda
 
 
 class AplGerenciarAluno(DAOAluno):
 
-    def cadastrar(Aluno):
+    def cadastrar(self, Aluno):
         aluno = Aluno
         aluno.nome = Aluno.nome
         aluno.rg = Aluno.rg
@@ -21,15 +21,21 @@ class AplGerenciarAluno(DAOAluno):
         aluno.grau_escolar = Aluno.grau_escolar
         aluno.pai = Aluno.pai
         aluno.mae = Aluno.mae
-        aluno.cor_corda = Corda
         aluno.cor_corda = Aluno.cor_corda
+        aluno.grupo = Aluno.grupo
 
-        daoAluno = DAOAluno
-        daoAluno.salvarAluno(aluno)
-
+        daoAluno = Sqlite_DAO_Factory.getDao(self, "Aluno")
+        daoAluno.salvar(self, aluno)
 
 
     def verificarAluno(self, rg_aluno):
         if rg_aluno ==0000:
             print('cadastrado')
         print('nao cadastrado')
+
+
+    def buscarAluno(nome):
+        print(nome)
+
+    def excluirAluno(dadoAluno):
+        print(dadoAluno)
