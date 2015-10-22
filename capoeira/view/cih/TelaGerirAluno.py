@@ -23,9 +23,9 @@ class TelaGerirAluno(CtrlTelaEndereco):
         aluno.grau_escolar = input('Grau de escolaridade: ')
         aluno.pai = input('Nome do pai: ')
         aluno.mae = input('Nome da mae: ')
-        aluno.cor_corda = Corda
-        aluno.cor_corda.cor = input('Cor da corda: ')
+        aluno.cor_corda = input('Cor da corda: ')
         aluno.grupo = input('Nome Grupo: ')
+
 
 
         print("Aluno salvo!")

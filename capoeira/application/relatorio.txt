@@ -1,0 +1,147 @@
+<<<<<<< HEAD
+Alunos matriculados: 
+
+Nome: deise
+RG: 12212
+Data de nascimento: 12222
+Endereco: ldkcmkdmc, 333, kmckdmkc, kdmkdmc, dkcmkdmkdmc
+Telefone: 8383838383
+Profissao: skmkcm
+Grau de escolaridade: kdksm
+Nome do pai: smxkm
+Nome da mae: mxksmsk
+Cor da corda: mxksmkmx
+
+Alunos matriculados: 
+
+Nome: leticia
+RG: 3223332
+Data de nascimento: 3233232
+Endereco: adscds, sdcsdfc, svfv, adfvadfb, adfdfvb
+Telefone: fvfd
+Profissao: fdvfdv
+Grau de escolaridade: afvadfv
+Nome do pai: afvadfv
+Nome da mae: adfvafdv
+Cor da corda: avafd
+
+Aluno matriculado: 
+
+Nome: lele
+RG: 2122
+Data de nascimento: dfccf
+Endereco: dfvfv, fdvfv, dfvf, fvvf, fvfvad
+Telefone: afdvf
+Profissao: adfvfdv
+Grau de escolaridade: adfvadfv
+Nome do pai: avfav
+Nome da mae: afdvfv
+
+Aluno matriculado: 
+
+Nome: cdfcsdc
+RG: dsvfv
+Data de nascimento: fvfdb
+Endereco: adff, dfdf, fdgb, gbgb, gbgb
+Telefone: sfgbb
+Profissao: sfgbsgb
+Grau de escolaridade: sgbsfb
+Nome do pai: sfgbsgb
+Nome da mae: sfbgb
+
+Aluno matriculado: 
+
+Nome: fadfadf
+RG: sdfsadf
+Data de nascimento: sdfsdf
+Endereco: sdfsdf, sdfsdf, sdfsdf, sdfsdf, sdfsdf
+Telefone: sdfsdf
+Profissao: sdfsdf
+Grau de escolaridade: sfsdf
+Nome do pai: sdfsdf
+Nome da mae: sdfsdf
+Cor da corda: sdfsdf
+
+Aluno matriculado: 
+
+Nome: 
+RG: fiosdd
+Data de nascimento: 3252463342
+Endereco: bdfsgbdfh, fdhdgh, dfhbdg, fsgheth, dfhg
+Telefone: hsfhgdh
+Profissao: dghf
+Grau de escolaridade: fhdh
+Nome do pai: dhrh
+Nome da mae: rh
+Cor da corda: 0
+
+Aluno matriculado: 
+
+
+
+Aluno matriculado: 
+
+Nome: e
+RG: e
+Data de nascimento: e
+Endereco: e, e, e, e, e
+Telefone: e
+Profissao: e
+Grau de escolaridade: e
+Nome do pai: e
+Nome da mae: e
+
+Aluno matriculado: 
+
+Nome: asa
+RG: sa
+Data de nascimento: ssa
+Endereco: sa, sas, as, as, a
+Telefone: sasa
+Profissao: as
+Grau de escolaridade: asa
+Nome do pai: s
+Nome da mae: asas
+Cor da corda: as
+
+Aluno matriculado: 
+
+Nome: sdfgs
+RG: sdfsdfsfgger
+Data de nascimento: sdf
+Endereco: d, dd, d, d, d
+Telefone: dd
+Profissao: d
+Grau de escolaridade: d
+Nome do pai: d
+Nome da mae: d
+Cor da corda: d
+=======
+>>>>>>> refs/remotes/leticiassenna/master
+
+
+Aluno matriculado: 
+
+Nome: asdsgfhg
+RG: dfsgfhg
+Data de nascimento: fasdsgfrhd
+Endereco: fadgsrfhd, fdasgfrdht, fdgsfhdgt, dvsgfhdt, gfhdtg
+Telefone: ewr
+Profissao: edgdsa
+Grau de escolaridade: gndfsda
+Nome do pai: fdfsdas
+Nome da mae: afdsgfgnd
+Cor da corda: fdgfhdg
+
+Aluno matriculado: 
+
+Nome: fewdgrthyj
+RG: feg3r4thy
+Data de nascimento: er4gbth5yn
+Endereco: rve, tb4hyn, , rg3t4h, rg
+Telefone: th
+Profissao: rgth
+Grau de escolaridade: r
+Nome do pai: rgthrrgbth
+Nome da mae: vrgtbhyn
+Cor da corda: rvgth

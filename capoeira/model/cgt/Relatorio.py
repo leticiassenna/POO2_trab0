@@ -26,7 +26,8 @@ class Relatorio(Turma, Aluno):
         arquivo.write('\nGrau de escolaridade: ' + Aluno.grau_escolar)
         arquivo.write('\nNome do pai: ' + Aluno.pai)
         arquivo.write('\nNome da mae: ' + Aluno.mae)
-        arquivo.write('\nCor da corda: ' + Aluno.cor_corda.cor)
-        arquivo.write('\nGrupo: ' + Aluno.grupo)
+        arquivo.write('\nCor da corda: ' + Aluno.cor_corda)
+        # for linha in arquivo.readlines():
+        #    print(linha)
 
         arquivo.close()

@@ -16,11 +16,10 @@ class AplGerenciarProfessor(DAOProfessor, Corda):
         professor.telefone = Professor.telefone
         professor.profissao = Professor.profissao
         professor.grau_escolar = Professor.grau_escolar
-        professor.cor_corda = Corda
         professor.cor_corda = Professor.cor_corda
 
-        daoProfessor = DAOProfessor
-        daoProfessor.salvarProfessor(professor)
+        daoProfessor = DAOProfessor()
+        daoProfessor.salvar(professor)
 
 
 
@@ -29,3 +28,4 @@ class AplGerenciarProfessor(DAOProfessor, Corda):
 
     def excluirProfessor(dadoProfessor):
         print(dadoProfessor)
+

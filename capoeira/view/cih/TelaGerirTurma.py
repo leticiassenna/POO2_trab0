@@ -15,14 +15,14 @@ class TelaGerirTurma (Turma):
         turma.horario = input('Horario: ')
         turma.dia_semana = input('Dia da semana: ')
         turma.rg_aluno = []
+        cadastro_reserva=[]
 
         while len(turma.rg_aluno)<=20:
             aluno = input("RG do aluno: ")
             turma.rg_aluno.append(aluno)
-        while len(turma.rg_aluno)>20:
+        while len(cadastro_reserva)<5:
             print('Cadastro de reserva!!')
             aluno = input("RG do aluno: ")
-            cadastro_reserva = []
             turma.cadastro_reserva = cadastro_reserva.append(aluno)
         #print("Aluno cadastrado na turma com sucesso.")
         #self.rg_aluno = input('RG dos alunos: ')

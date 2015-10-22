@@ -1,7 +1,6 @@
 __author__ = 'Leticia'
 
 from capoeira.model.cdp.Endereco import Endereco
-#from capoeira.model.cgd.DAOEndereco import DAOEndereco
 
 class AplGerenciarEndereco():
 

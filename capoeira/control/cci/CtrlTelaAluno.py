@@ -14,7 +14,7 @@ class CtrlTelaAluno(AplGerenciarAluno, TelaGerirAluno):
         aplGerenciarAluno.cadastrar(self, dadosAluno)
 
         relatorio = Relatorio
-        relatorio.gerar_relatorio(aplGerenciarAluno)
+        relatorio.gerar_relatorio(dadosAluno)
 
         telaGerirAluno.mensagem(self, 'Cadastro realizado!')
 

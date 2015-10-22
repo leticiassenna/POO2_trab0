@@ -16,8 +16,9 @@ class AplGerenciarGrupo(DAOGrupo):
         grupo.sequencia_corda = Grupo.sequencia_corda
 
 
-        daoGrupo = Sqlite_DAO_Factory.getDao(self, "Grupo")
-        daoGrupo.salvarGrupo(grupo)
+
+        daoGrupo = Sqlite_DAO_Factory().getDao("Grupo")
+        daoGrupo.salvar(grupo)
 
 
     def buscarGrupo(nome):
@@ -25,3 +26,4 @@ class AplGerenciarGrupo(DAOGrupo):
 
     def excluirAlunoGrupo(dadoGrupo):
         print(dadoGrupo)
+

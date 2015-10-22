@@ -10,7 +10,7 @@ class TelaGerirGrupo (CtrlTelaEndereco, Grupo):
         print(msg)
 
     def cadastrarGrupo(self):
-        grupo = Grupo
+        grupo = Grupo()
         grupo.nome = input('Nome do aluno: ')
         grupo.endereco = Endereco
         grupo.endereco = CtrlTelaEndereco.cadastrarEndereco(self)

@@ -1,10 +1,8 @@
 __author__ = 'Gustavo'
 
-<<<<<<< HEAD
-class DAO:
-=======
-def DAO():
->>>>>>> origin/master
+
+class DAO():
+
 
     def gravar_banco(self):
         raise Exception("Preciso ser implementado")
@@ -13,4 +11,7 @@ def DAO():
         raise Exception("Preciso ser implementado")
 
     def listar(self):
+        raise Exception("Preciso ser implementado")
+
+    def clone(self):
         raise Exception("Preciso ser implementado")

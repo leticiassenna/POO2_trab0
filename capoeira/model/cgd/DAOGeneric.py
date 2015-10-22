@@ -1,10 +1,15 @@
 __author__ = 'Gustavo'
 import sqlite3
 class DAOGeneric():
-
+    def __new__(cls, *args, **kwargs):
+            if not hasattr(cls, '_instance'):
+                 cls._instance = super(DAOGeneric, cls).__new__(cls, *args, **kwargs)
+            return cls._instance
     def __init__(self):
 
-        self.conn = sqlite3.connect("poo2.db")
+
+        self.conn = sqlite3.connect("po2.db")
+
 
         self.cursor = self.conn.cursor()
 
@@ -33,7 +38,8 @@ class DAOGeneric():
         )""")
         self.conn.commit()
 
-        self.cursor.execute("""CREATE TABLE IF NOT EXISTS pessoa (nome text, data_nascimento text, telefone text, profissao text, grau_escolaridade text, rg text PRIMARY KEY, sequencia_cor text,id_grupo text,  FOREIGN KEY(id_grupo) REFERENCES grupo (id_grupo))""")
+        self.cursor.execute("""CREATE TABLE IF NOT EXISTS pessoa (nome text, data_nascimento text, telefone text, profissao text, grau_escolaridade text, rg text PRIMARY KEY unique, sequencia_cor text,id_grupo text)""")
+
         self.conn.commit()
         self.cursor.execute("""CREATE TABLE IF NOT EXISTS turma (grau text, turno text, id_turma INTEGER PRIMARY KEY autoincrement,rg_professor text, FOREIGN KEY(rg_professor) REFERENCES pessoa (rg))""")
         self.conn.commit()
@@ -100,16 +106,23 @@ class DAOGeneric():
     def connect_db(self):
         try:
             # conectando...
-            self.conn = sqlite3.connect("mydatabase.db")
+
+            self.conn = sqlite3.connect("po2.db")
+
             self.cursor = self.conn.cursor()
         except sqlite3.Error:
             print("Erro ao abrir banco.")
 # metodo para exeutar operacoes sem retorno ao banco de dados
     def execute_insert_delete(self, modificador):
-        self.connect_db()
-        self.cursor.execute(modificador)
-        self.close_db()
-        return self.cursor.lastrowid
+
+        try:
+            self.connect_db()
+            self.cursor.execute(modificador)
+            self.close_db()
+            return self.cursor.lastrowid
+        except:
+            raise
+
 #metodo para selecionar algo do banco de dados
     def execute_select(self, string_para_selecao):
         self.connect_db()

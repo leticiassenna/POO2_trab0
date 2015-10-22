@@ -15,6 +15,7 @@ class Pessoa:
         self.telefone = ""
         self.profissao = ""
         self.grau_escolar = ""
-        self.cor_corda = Corda
-        self.grupo = ""
+        self.cor_corda = ""
+        self.grupo = ''
+
         self.endereco = Endereco()

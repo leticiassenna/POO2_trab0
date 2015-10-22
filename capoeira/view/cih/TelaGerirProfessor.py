@@ -15,14 +15,13 @@ class TelaGerirProfessor (Professor):
         professor.nome = input('Nome do professor: ')
         professor.rg = input('RG professor: ')
         professor.data_nascimento = input('Data de nascimento: ')
-        professor.endereco = Endereco
+        professor.endereco = Endereco()
         professor.endereco = CtrlTelaEndereco.cadastrarEndereco(self)
         #self.endereco = input('Endereco: ')
         professor.telefone = input('Telefone: ')
         professor.profissao = input('Profissao: ')
         professor.grau_escolar = input('Grau de escolaridade: ')
-        professor.cor_corda = Corda
-        professor.cor_corda.cor = input('Cor da corda: ')
+        professor.cor_corda= input('Cor da corda: ')
 
         #professor = []
         #professor.append((self.nome, self.rg, self.data_nascimento, self.endereco, self.telefone, self.profissao,self.grau_escolaridade, self.cor_corda))
