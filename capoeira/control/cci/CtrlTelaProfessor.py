@@ -1,32 +1,31 @@
 __author__ = 'Leticia'
 
-from capoeira.model.cgt.AplGerenciarProfessor import AplGerenciarProfessor
+from capoeira.model.cdp.AplGerenciarProfessor import AplGerenciarProfessor
 from capoeira.view.cih.TelaGerirProfessor import TelaGerirProfessor
 
 
 class CtrlTelaProfessor(AplGerenciarProfessor, TelaGerirProfessor):
 
-    def cadastrarProfessor(self):
-        aplGerenciarProfessor = AplGerenciarProfessor
-        telaGerirProfessor = TelaGerirProfessor
+    def cadastrar_professor(self):
+        apl_gerenciar_professor = AplGerenciarProfessor
+        tela_gerir_professor = TelaGerirProfessor
 
-        #dadosProfessor = []
-        dadosProfessor = telaGerirProfessor.cadastrarProfessor(self)
-        aplGerenciarProfessor.cadastrar(dadosProfessor)
+        dados_professor = tela_gerir_professor.cadastrar_professor(self)
+        apl_gerenciar_professor.cadastrar(self, dados_professor)
 
-        telaGerirProfessor.mensagem(self, 'Cadastro realizado!')
+        tela_gerir_professor.mensagem(self, 'Cadastro realizado!')
 
 
-    def alterarProfessor(self):
-        aplGerenciarProfessor = AplGerenciarProfessor
-        telaGerirProfessor = TelaGerirProfessor
+    def alterar_professor(self):
+        apl_gerenciar_professor = AplGerenciarProfessor
+        tela_gerir_professor = TelaGerirProfessor
 
-        dadosProfessor = telaGerirProfessor.buscarProfessor(self)
-        aplGerenciarProfessor.buscarProfessor(dadosProfessor)
+        dados_professor = tela_gerir_professor.buscar_professor(self)
+        apl_gerenciar_professor.buscar_professor(dados_professor)
 
-    def excluirProfessor(self):
-        aplGerenciarProfessor = AplGerenciarProfessor
-        telaGerirProfessor = TelaGerirProfessor
+    def excluir_professor(self):
+        apl_gerenciar_professor = AplGerenciarProfessor
+        tela_gerir_professor = TelaGerirProfessor
 
-        dadosAluno = telaGerirProfessor.excluirProfessor(self)
-        aplGerenciarProfessor.excluirProfessor(dadosAluno)
+        dados_professor = tela_gerir_professor.excluir_professor(self)
+        apl_gerenciar_professor.excluir_professor(dados_professor)

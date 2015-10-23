@@ -1,6 +1,6 @@
 __author__ = 'Leticia'
 
-from capoeira.model.cdp.Turma import Turma
+from capoeira.model.cgt.Turma import Turma
 
 class TelaGerirTurma (Turma):
 
@@ -8,7 +8,7 @@ class TelaGerirTurma (Turma):
         print(msg)
 
 
-    def cadastrarTurma(self):
+    def cadastrar_turma(self):
         turma = Turma
         turma.nome = input('Nome da turma: ')
         turma.turno = input('Turno: ')
@@ -24,13 +24,8 @@ class TelaGerirTurma (Turma):
             print('Cadastro de reserva!!')
             aluno = input("RG do aluno: ")
             turma.cadastro_reserva = cadastro_reserva.append(aluno)
-        #print("Aluno cadastrado na turma com sucesso.")
-        #self.rg_aluno = input('RG dos alunos: ')
 
         turma.rg_professor = input('RG do professor: ')
-
-        #turma = []
-        #turma.append((self.nome, self.turno, self.horario, self.dia_semana, self.rg_aluno, self.rg_professor))
 
         print("Turma salvo!")
 
@@ -38,11 +33,11 @@ class TelaGerirTurma (Turma):
 
 
 
-    def buscarTurma(self):
-        turmaNome = input('Nome da turma: ')
-        return turmaNome
+    def buscar_turma(self):
+        turma_nome = input('Nome da turma: ')
+        return turma_nome
 
 
-    def excluirTurma(self):
-        turmaNome = input('Nome da turma: ')
-        return turmaNome
+    def excluir_turma(self):
+        turma_nome = input('Nome da turma: ')
+        return turma_nome

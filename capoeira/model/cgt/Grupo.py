@@ -1,7 +1,6 @@
 __author__ = 'Leticia'
 
-from capoeira.model.cdp.Corda import Corda
-from capoeira.model.cdp.Endereco import Endereco
+from capoeira.model.cgt.Endereco import Endereco
 
 class Grupo():
     def grupo(self):

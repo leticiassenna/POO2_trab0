@@ -1,9 +1,8 @@
 from capoeira.model.cgd.DAO import DAO
-from capoeira.model.cgd.DAOGeneric import DAOGeneric
+from capoeira.model.cgd.Conexao import Conexao
 import copy
 __author__ = 'Leticia'
 
-from capoeira.model.cdp.Grupo import Grupo
 
 class DAOGrupo(DAO):
     def clone(self):
@@ -11,14 +10,12 @@ class DAOGrupo(DAO):
 
     def salvar(self, grupo):
         try:
-            dao = DAOGeneric()
+            dao = Conexao()
             id_endereco = dao.execute_insert_delete("""
             INSERT INTO endereco (logadouro, numero , bairro, cidade, complemento)
             VALUES (%r,%r,%r,%r,%r)
-            """ % (grupo.endereco.logradouro, grupo.endereco.numero, grupo.endereco.bairro, grupo.endereco.cidade, grupo.endereco.complemento))
-            #dao.execute_insert_delete("""
-            #INSERT INTO grupo (nome, cor, id_endereco)
-            #VALUES (%r,%r,%r)
-            #""" % (grupo.nome, grupo.sequencia_corda, id_endereco))
+            """ % (grupo.endereco.logradouro, grupo.endereco.numero, grupo.endereco.bairro, grupo.endereco.cidade,
+                   grupo.endereco.complemento))
+
         except ValueError:
             raise

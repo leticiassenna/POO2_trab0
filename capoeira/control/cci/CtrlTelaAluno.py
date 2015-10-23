@@ -1,34 +1,34 @@
 __author__ = 'Leticia'
 
-from capoeira.model.cgt.AplGerenciarAluno import AplGerenciarAluno
+from capoeira.model.cdp.AplGerenciarAluno import AplGerenciarAluno
 from capoeira.view.cih.TelaGerirAluno import TelaGerirAluno
-from capoeira.model.cgt.Relatorio import Relatorio
+from capoeira.model.cdp.Relatorio import Relatorio
 
 class CtrlTelaAluno(AplGerenciarAluno, TelaGerirAluno):
 
-    def cadastrarAluno(self):
-        aplGerenciarAluno = AplGerenciarAluno
-        telaGerirAluno = TelaGerirAluno
+    def cadastrar_aluno(self):
+        apl_gerenciar_aluno = AplGerenciarAluno
+        tela_gerir_aluno = TelaGerirAluno
 
-        dadosAluno = telaGerirAluno.cadastrarAluno(self)
-        aplGerenciarAluno.cadastrar(self, dadosAluno)
+        dados_aluno = tela_gerir_aluno.cadastrar_aluno(self)
+        apl_gerenciar_aluno.cadastrar(self, dados_aluno)
 
         relatorio = Relatorio
-        relatorio.gerar_relatorio(dadosAluno)
+        relatorio.gerar_relatorio(dados_aluno)
 
-        telaGerirAluno.mensagem(self, 'Cadastro realizado!')
+        tela_gerir_aluno.mensagem(self, 'Cadastro realizado!')
 
 
-    def alterarAluno(self):
-        aplGerenciarAluno = AplGerenciarAluno
-        telaGerirAluno = TelaGerirAluno
+    def alterar_aluno(self):
+        apl_gerenciar_aluno = AplGerenciarAluno
+        tela_gerir_aluno = TelaGerirAluno
 
-        dadosAluno = telaGerirAluno.buscarAluno(self)
-        aplGerenciarAluno.buscarAluno(dadosAluno)
+        dados_aluno = tela_gerir_aluno.buscar_aluno(self)
+        apl_gerenciar_aluno.buscar_aluno(dados_aluno)
 
-    def excluirAluno(self):
-        aplGerenciarAluno = AplGerenciarAluno
-        telaGerirAluno = TelaGerirAluno
+    def excluir_aluno(self):
+        apl_gerenciar_aluno = AplGerenciarAluno
+        tela_gerir_aluno = TelaGerirAluno
 
-        dadosAluno = telaGerirAluno.excluirAluno(self)
-        aplGerenciarAluno.excluirAluno(dadosAluno)
+        dados_aluno = tela_gerir_aluno.excluir_aluno(self)
+        apl_gerenciar_aluno.excluir_aluno(dados_aluno)

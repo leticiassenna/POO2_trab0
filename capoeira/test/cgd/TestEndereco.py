@@ -1,16 +1,12 @@
 __author__ = 'Leticia'
 
 import unittest
-from capoeira.model.cgt.AplGerenciarEndereco import AplGerenciarEndereco
-from capoeira.model.cdp.Endereco import Endereco
+from capoeira.model.cdp.AplGerenciarEndereco import AplGerenciarEndereco
+from capoeira.model.cgt.Endereco import Endereco
 
 
 class TestEndereco(unittest.TestCase):
-    def testEndereco(self):
-        """
-
-        :type self: AplGerenciarEndereco
-        """
+    def test_endereco(self):
         e = Endereco
         e.logradouro = 'Rua Lumberto Maciel de Azevedo'
         e.numero = '370'
@@ -18,10 +14,10 @@ class TestEndereco(unittest.TestCase):
         e.cidade = 'Vitoria'
         e.complemento = 'Ed. Ilha do Sol'
 
-        aplGerenciarEndereco = AplGerenciarEndereco
-        aplGerenciarEndereco.cadastrar(e)
+        apl_gerenciar_endereco = AplGerenciarEndereco
+        apl_gerenciar_endereco.cadastrar(e)
 
-        self.assertEqual(aplGerenciarEndereco.logradouro, e.logradouro)
+        self.assertEqual(apl_gerenciar_endereco.logradouro, e.logradouro)
 
 
 if __name__ == '__main__':

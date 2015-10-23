@@ -1,10 +1,9 @@
 from capoeira.model.cgd.DAO import DAO
-from capoeira.model.cgd.DAOGeneric import DAOGeneric
+from capoeira.model.cgd.Conexao import Conexao
 import copy
-from capoeira.model.cdp.Aluno import Aluno
 
 __author__ = 'Gustavo'
-import sqlite3
+
 class DAOAluno(DAO):
 
     def clone(self):
@@ -13,7 +12,7 @@ class DAOAluno(DAO):
 
     def salvar(self, aluno):
         try:
-            dao = DAOGeneric()
+            dao = Conexao()
             dao.execute_insert_delete("""
             INSERT INTO pessoa (nome, data_nascimento , telefone , profissao , grau_escolaridade , rg , sequencia_cor)
             VALUES (%r,%r,%r,%r,%r,%r,%r)

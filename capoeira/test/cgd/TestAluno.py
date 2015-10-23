@@ -1,17 +1,18 @@
-from capoeira.model.cdp.Corda import Corda
-from capoeira.model.cdp.Endereco import Endereco
+from capoeira.model.cgt.Corda import Corda
+from capoeira.model.cgt.Endereco import Endereco
 from capoeira.model.cgd.DAOAluno import DAOAluno
 from capoeira.model.cgd.DAOCorda import DAOCorda
 
 __author__ = 'Leticia'
 
 import unittest
-from capoeira.model.cdp.Aluno import Aluno
-from capoeira.model.cgt.AplGerenciarAluno import AplGerenciarAluno
+from capoeira.model.cgt.Aluno import Aluno
+from capoeira.model.cdp.AplGerenciarAluno import AplGerenciarAluno
 
 
 class TestAuno(unittest.TestCase):
-    def testAluno(self):
+
+    def test_aluno(self):
         dao = DAOAluno()
         a = Aluno()
         corda = Corda()
@@ -34,9 +35,9 @@ class TestAuno(unittest.TestCase):
         DAOCorda().salvar(corda)
         a.grupo = ''
 
-        aplGerenciarAluno = AplGerenciarAluno()
-        aplGerenciarAluno.cadastrar(a)
-        #self.assertEqual(aplGerenciarAluno.nome, a.nome)
+        apl_gerenciar_aluno = AplGerenciarAluno()
+        apl_gerenciar_aluno.cadastrar(a)
+        #self.assertEqual(apl_gerenciar_aluno.nome, a.nome)
 
 
 

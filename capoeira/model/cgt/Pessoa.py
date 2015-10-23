@@ -1,9 +1,8 @@
-from capoeira.model.cdp.Grupo import Grupo
 
 __author__ = 'Leticia'
 
-from capoeira.model.cdp.Endereco import Endereco
-from capoeira.model.cdp.Corda import Corda
+from capoeira.model.cgt.Endereco import Endereco
+
 
 class Pessoa:
 

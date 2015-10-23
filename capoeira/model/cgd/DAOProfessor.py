@@ -1,10 +1,8 @@
 from capoeira.model.cgd.DAO import DAO
-from capoeira.model.cgd.DAOGeneric import DAOGeneric
+from capoeira.model.cgd.Conexao import Conexao
 import copy
 __author__ = 'Gustavo'
 
-
-from capoeira.model.cdp.Professor import Professor
 
 class DAOProfessor(DAO):
 
@@ -14,7 +12,7 @@ class DAOProfessor(DAO):
     def salvar(self, professor):
 
         try:
-            dao = DAOGeneric()
+            dao = Conexao()
             dao.execute_insert_delete("""
             INSERT INTO pessoa (nome, data_nascimento , telefone , profissao , grau_escolaridade , rg , sequencia_cor)
             VALUES (%r,%r,%r,%r,%r,%r,%r)

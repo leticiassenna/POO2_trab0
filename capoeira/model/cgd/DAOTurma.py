@@ -1,9 +1,7 @@
 from capoeira.model.cgd.DAO import DAO
-from capoeira.model.cgd.DAOGeneric import DAOGeneric
+from capoeira.model.cgd.Conexao import Conexao
 import copy
 __author__ = 'Leticia'
-
-from capoeira.model.cdp.Turma import Turma
 
 
 class DAOTurma(DAO):
@@ -13,7 +11,7 @@ class DAOTurma(DAO):
 
     def salvar(self, turma):
         try:
-            dao = DAOGeneric()
+            dao = Conexao()
             dao.execute_insert_delete("""
             INSERT INTO turma (grau , turno, rg_professor )
             VALUES (%r,%r,%r,%r,%r,%r,%r,%r)

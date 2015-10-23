@@ -3,8 +3,6 @@ import copy
 __author__ = 'Leticia'
 
 
-from capoeira.model.cdp.Exame import Exame
-
 class DAOExame(DAO):
 
     def clone(self):

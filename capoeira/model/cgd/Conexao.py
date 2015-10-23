@@ -1,10 +1,10 @@
 __author__ = 'Gustavo'
 
 import sqlite3
-class DAOGeneric():
+class Conexao():
     def __new__(cls, *args, **kwargs):
             if not hasattr(cls, '_instance'):
-                 cls._instance = super(DAOGeneric, cls).__new__(cls, *args, **kwargs)
+                 cls._instance = super(Conexao, cls).__new__(cls, *args, **kwargs)
             return cls._instance
     def __init__(self):
 

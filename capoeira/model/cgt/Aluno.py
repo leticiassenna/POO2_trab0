@@ -1,8 +1,6 @@
-from capoeira.model.cdp.Endereco import Endereco
 
 __author__ = 'Leticia'
-from capoeira.model.cdp.Pessoa import Pessoa
-#from capoeira.model.cdp.Endereco import Endereco
+from capoeira.model.cgt.Pessoa import Pessoa
 
 
 class Aluno(Pessoa):

@@ -1,33 +1,31 @@
 __author__ = 'Leticia'
 
-from capoeira.model.cgt.AplGerenciarTurma import AplGerenciarTurma
+from capoeira.model.cdp.AplGerenciarTurma import AplGerenciarTurma
 from capoeira.view.cih.TelaGerirTurma import TelaGerirTurma
 
 
 class CtrlTelaTurma(AplGerenciarTurma, TelaGerirTurma):
 
-    def cadastrarAluno(self):
-        aplGerenciarTurma = AplGerenciarTurma
-        telaGerirTurma = TelaGerirTurma
+    def cadastrar_aluno(self):
+        apl_gerenciar_turma = AplGerenciarTurma
+        tela_gerir_turma = TelaGerirTurma
 
-        #dadosTurma = []
-        dadosTurma = telaGerirTurma.cadastrarTurma(self)
-        aplGerenciarTurma.cadastrar(dadosTurma)
+        dados_turma = tela_gerir_turma.cadastrar_turma(self)
+        apl_gerenciar_turma.cadastrar(self, dados_turma)
 
-        telaGerirTurma.mensagem(self,'Cadastro realizado!')
-
+        tela_gerir_turma.mensagem(self,'Cadastro realizado!')
 
 
-    def alterarTurma(self):
-        aplGerenciarTurma = AplGerenciarTurma
-        telaGerirTurma = TelaGerirTurma
+    def alterar_turma(self):
+        apl_gerenciar_turma = AplGerenciarTurma
+        tela_gerir_turma = TelaGerirTurma
 
-        dadosTurma = telaGerirTurma.buscarTurma(self)
-        aplGerenciarTurma.buscarTurma(dadosTurma)
+        dados_turma = tela_gerir_turma.buscar_turma(self)
+        apl_gerenciar_turma.buscar_turma(dados_turma)
 
-    def excluirTurma(self):
-        aplGerenciarTurma = AplGerenciarTurma
-        telaGerirTurma = TelaGerirTurma
+    def excluir_turma(self):
+        apl_gerenciar_turma = AplGerenciarTurma
+        tela_gerir_turma = TelaGerirTurma
 
-        dadosTurma = telaGerirTurma.excluirTurma(self)
-        aplGerenciarTurma.excluirTurma(dadosTurma)
+        dados_turma = tela_gerir_turma.excluir_turma(self)
+        apl_gerenciar_turma.excluir_turma(dados_turma)

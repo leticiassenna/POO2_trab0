@@ -145,3 +145,29 @@ Grau de escolaridade: r
 Nome do pai: rgthrrgbth
 Nome da mae: vrgtbhyn
 Cor da corda: rvgth
+
+Aluno matriculado: 
+
+Nome: asdsfsdgf
+RG: fsdghf
+Data de nascimento: gh
+Endereco: 4, u, eti, , yuk
+Telefone: 
+Profissao: 
+Grau de escolaridade: ngdg
+Nome do pai: hgf
+Nome da mae: f
+Cor da corda: htik
+
+Aluno matriculado: 
+
+Nome: fdght
+RG: saetwyuj
+Data de nascimento: yeuyjt
+Endereco: aeyeut, yutj, eyuityk, eeyu, etyr
+Telefone: yut
+Profissao: sereytu
+Grau de escolaridade: setryut
+Nome do pai: fteyrut
+Nome da mae: syreut
+Cor da corda: dgsrytuy

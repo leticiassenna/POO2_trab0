@@ -1,32 +1,31 @@
 __author__ = 'Leticia'
 
-from capoeira.model.cgt.AplGerenciarGrupo import AplGerenciarGrupo
+from capoeira.model.cdp.AplGerenciarGrupo import AplGerenciarGrupo
 from capoeira.view.cih.TelaGerirGrupo import TelaGerirGrupo
 
 
 class CtrlTelaGrupo(AplGerenciarGrupo, TelaGerirGrupo):
 
-    def cadastrarGrupo(self):
-        aplGerenciarGrupo = AplGerenciarGrupo
-        telaGerirGrupo = TelaGerirGrupo
+    def cadastrar_grupo(self):
+        apl_gerenciar_grupo = AplGerenciarGrupo
+        tela_gerir_grupo = TelaGerirGrupo
 
-       # dadosGrupo = []
-        dadosGrupo = telaGerirGrupo.cadastrarGrupo(self)
-        aplGerenciarGrupo.cadastrar(dadosGrupo)
+        dados_grupo = tela_gerir_grupo.cadastrar_grupo(self)
+        apl_gerenciar_grupo.cadastrar(self, dados_grupo)
 
-        telaGerirGrupo.mensagem(self, 'Cadastro realizado!')
+        tela_gerir_grupo.mensagem(self, 'Cadastro realizado!')
 
 
-    def alterarGrupo(self):
-        aplGerenciarGrupo = AplGerenciarGrupo
-        telaGerirGrupo = TelaGerirGrupo
+    def alterar_grupo(self):
+        apl_gerenciar_grupo = AplGerenciarGrupo
+        tela_gerir_grupo = TelaGerirGrupo
 
-        dadosGrupo = telaGerirGrupo.buscarGrupo(self)
-        aplGerenciarGrupo.buscarGrupo(dadosGrupo)
+        dados_grupo = tela_gerir_grupo.buscar_grupo(self)
+        apl_gerenciar_grupo.buscar_grupo(dados_grupo)
 
-    def excluirGrupo(self):
-        aplGerenciarGrupo = AplGerenciarGrupo
-        telaGerirGrupo = TelaGerirGrupo
+    def excluir_grupo(self):
+        apl_gerenciar_grupo = AplGerenciarGrupo
+        tela_gerir_grupo = TelaGerirGrupo
 
-        dadosGrupo = telaGerirGrupo.excluirGrupo(self)
-        aplGerenciarGrupo.excluirGrupo(dadosGrupo)
+        dados_grupo = tela_gerir_grupo.excluir_grupo(self)
+        apl_gerenciar_grupo.excluir_grupo(dados_grupo)

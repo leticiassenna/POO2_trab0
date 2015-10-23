@@ -1,6 +1,5 @@
 __author__ = 'Leticia'
-from capoeira.model.cdp.Pessoa import Pessoa
-#from capoeira.model.cdp.Endereco import Endereco
+from capoeira.model.cgt.Pessoa import Pessoa
 
 
 class Professor(Pessoa):

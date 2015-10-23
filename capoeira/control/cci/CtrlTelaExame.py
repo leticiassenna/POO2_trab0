@@ -1,33 +1,32 @@
 __author__ = 'Leticia'
 
-from capoeira.model.cgt.AplGerenciarExame import AplGerenciarExame
+from capoeira.model.cdp.AplGerenciarExame import AplGerenciarExame
 from capoeira.view.cih.TelaGerirExame import TelaGerirExame
 
 
 class CtrlTelaExame(AplGerenciarExame, TelaGerirExame):
 
-    def cadastrarExame(self):
-        aplGerenciarExame = AplGerenciarExame
-        telaGerirExame = TelaGerirExame
+    def cadastrar_exame(self):
+        apl_gerenciar_exame = AplGerenciarExame
+        tela_gerir_exame = TelaGerirExame
 
-        #dadosExame = []
-        dadosExame = telaGerirExame.cadastrarExame(self)
-        aplGerenciarExame.cadastrar(dadosExame)
+        dados_exame = tela_gerir_exame.cadastrar_exame(self)
+        apl_gerenciar_exame.cadastrar(self, dados_exame)
 
-        telaGerirExame.mensagem(self, 'Cadastro realizado!')
-
+        tela_gerir_exame.mensagem(self, 'Cadastro realizado!')
 
 
-    def alterarExame(self):
-        aplGerenciarExame = AplGerenciarExame
-        telaGerirExame = TelaGerirExame
 
-        dadosExame = telaGerirExame.buscarExame(self)
-        aplGerenciarExame.buscarExame(dadosExame)
+    def alterar_exame(self):
+        apl_gerenciar_exame = AplGerenciarExame
+        tela_gerir_exame = TelaGerirExame
 
-    def excluirExame(self):
-        aplGerenciarExame = AplGerenciarExame
-        telaGerirExame = TelaGerirExame
+        dados_exame = tela_gerir_exame.buscar_exame(self)
+        apl_gerenciar_exame.buscar_exame(self, dados_exame)
 
-        dadosExame = telaGerirExame.excluirExame(self)
-        aplGerenciarExame.excluirExame(dadosExame)
+    def excluir_exame(self):
+        apl_gerenciar_exame = AplGerenciarExame
+        tela_gerir_exame = TelaGerirExame
+
+        dados_exame = tela_gerir_exame.excluir_exame(self)
+        apl_gerenciar_exame.excluir_exame(self, dados_exame)

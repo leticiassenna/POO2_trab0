@@ -1,39 +1,33 @@
 __author__ = 'Leticia'
 
 from capoeira.control.cci.CtrlTelaEndereco import CtrlTelaEndereco
-from capoeira.model.cdp.Exame import Exame
-from capoeira.model.cdp.Endereco import Endereco
-#from capoeira.model.cdp.Turma import Turma
+from capoeira.model.cgt.Exame import Exame
+from capoeira.model.cgt.Endereco import Endereco
 
 class TelaGerirExame (CtrlTelaEndereco, Exame):
 
     def mensagem(self, msg):
         print(msg)
 
-    def cadastrarExame(self):
+    def cadastrar_exame(self):
         exame = Exame
         exame.hora = input('Hora: ')
         exame.data = input('Data: ')
         exame.endereco = Endereco
-        exame.endereco = CtrlTelaEndereco.cadastrarEndereco(self)
-        #self.endereco = input('Endereco: ')
+        exame.endereco = CtrlTelaEndereco.cadastrar_endereco(self)
         exame.mestre_examinador = input('Mestre Examinador: ')
-        #exame.turma = Turma
         exame.turma = input('Turma a ser avaliada: ')
-
-        #exame = []
-        #exame.append((self.hora, self.data, self.endereco, self.meste_examinador, self.turma))
 
         print("Exame salvo!")
 
         return exame
 
 
-    def buscarExame(self):
+    def buscar_exame(self):
         dados = input('Dia do exame: ')
         return dados
 
 
-    def excluirExame(self):
+    def excluir_exame(self):
         dados = input('Dia do exame: ')
         return dados
