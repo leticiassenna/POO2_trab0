@@ -6,7 +6,7 @@ __author__ = 'Leticia'
 from capoeira.model.cdp.Turma import Turma
 
 
-class DAOTuma(DAO):
+class DAOTurma(DAO):
 
     def clone(self):
             return copy.copy(self)

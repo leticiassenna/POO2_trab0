@@ -1,4 +1,5 @@
 __author__ = 'Gustavo'
+
 import sqlite3
 class DAOGeneric():
     def __new__(cls, *args, **kwargs):

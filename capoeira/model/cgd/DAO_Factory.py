@@ -19,3 +19,8 @@ class DAO_Factory():
     def getDaoGrupo(self):
         raise Exception("Preciso ser implementado")
 
+    def getDaoProfessor(self):
+        raise Exception("Preciso ser implementado")
+
+    def getDaoTurma(self):
+        raise Exception("Preciso ser implementado")

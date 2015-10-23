@@ -12,5 +12,9 @@ class Sqlite_DAO_Factory():
            return Sqlite_DAO().getDaoCorda()
         elif nomeDao == "Exame":
            return Sqlite_DAO().getDaoExame()
+        elif nomeDao == "Turma":
+           return Sqlite_DAO().getDaoTurma()
+        elif nomeDao == "Professor":
+           return Sqlite_DAO().getDaoProfessor()
         else:
            return Sqlite_DAO().getDaoGrupo()
