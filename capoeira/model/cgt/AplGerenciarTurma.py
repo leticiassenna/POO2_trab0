@@ -1,9 +1,11 @@
+from capoeira.model.cgd.Sqlite_DAO_factory import Sqlite_DAO_Factory
+
 __author__ = 'Leticia'
 
 from capoeira.model.cdp.Turma import Turma
-from capoeira.model.cgd.DAOTurma import DAOTuma
+from capoeira.model.cgd.DAOTurma import DAOTurma
 
-class AplGerenciarTurma(DAOTuma):
+class AplGerenciarTurma(DAOTurma):
 
     def cadastrar(Turma):
         turma = Turma
@@ -14,7 +16,7 @@ class AplGerenciarTurma(DAOTuma):
         turma.rg_professor = Turma.rg_professor
         turma.cadastro_reserva = Turma.cadastro_reserva
 
-        daoTurma = DAOTuma
+        daoTurma = Sqlite_DAO_Factory().getDao( "Turma")
         daoTurma.salvarTurma(turma)
 
 

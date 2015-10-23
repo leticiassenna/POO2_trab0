@@ -1,3 +1,5 @@
+from capoeira.model.cgd.Sqlite_DAO_factory import Sqlite_DAO_Factory
+
 __author__ = 'Leticia'
 
 from capoeira.model.cdp.Corda import Corda
@@ -18,7 +20,7 @@ class AplGerenciarProfessor(DAOProfessor, Corda):
         professor.grau_escolar = Professor.grau_escolar
         professor.cor_corda = Professor.cor_corda
 
-        daoProfessor = DAOProfessor()
+        daoProfessor = Sqlite_DAO_Factory().getDao( "Professor")
         daoProfessor.salvar(professor)
 
 
